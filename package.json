@@ -4,8 +4,8 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
+    "dev": "vite dev.html",
+    "build": "tsc && vite build && cp -r dist/assets/* assets/ && cp -r dist/assets docs/ && cp index.html docs/index.html",
     "preview": "vite preview",
     "test": "vitest run"
   },
